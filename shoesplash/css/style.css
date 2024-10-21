@@ -1,0 +1,334 @@
+:root {
+    --prim: #F6D4F5;
+    --topbar: #353232;
+
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    margin: auto;
+    background-color: rgb(247, 246, 246);
+}
+
+.container {
+    max-width: 1500px;
+    width: 75%;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    background-color: var(--prim);
+}
+
+header .topbar {
+    background-color: var(--topbar);
+    color: var(--prim);
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+.left {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.left span {
+    text-align: right;
+}
+
+.right {
+    float: right;
+    margin-top: 30px;
+}
+
+#cart i {
+    font-size: x-large;
+    color: #f090c8;
+}
+
+div p span {
+    font-weight: bold;
+}
+
+
+nav {
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--topbar);
+    padding: 20px 30px;
+    text-transform: uppercase;
+}
+
+header .container>nav a:hover {
+    background-color: rgb(53, 50, 50);
+    color: white;
+    transition: all 0.1s ease 0s;
+}
+
+
+section {
+
+    padding: 20px;
+    margin-top: 30px;
+
+}
+
+#slider {
+    position: relative;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+#slider img {
+    width: 100%;
+
+}
+
+#slider h2 {
+    position: absolute;
+    background-color: var(--prim);
+    opacity: 0.8;
+    width: 40%;
+
+}
+
+#slider span {
+    text-decoration: none;
+    font-size: large;
+}
+
+#select {
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+#select article h3 {
+    text-align: center;
+    font-family: "Courgette";
+    font-size: 1.6em;
+}
+#select:hover article {
+    opacity: 0.5;
+}
+
+
+#select article {
+    display: inline-block;
+    text-align: center;
+    width: 19.5%;
+    padding-bottom: 30px;
+
+}
+
+#select article:hover {
+    transition: all 0.2s ease 0s;
+    opacity: 1;
+
+}
+
+#news {
+    display: flex;
+
+
+
+}
+
+#news article {
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin: auto;
+
+
+}
+#news article h2 img{
+    width: 8%;
+    padding: 2px;
+}
+
+#new h2,
+#best h2,
+#crush h2 {
+    background-image: url(../../img/logo4.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding: 10px 40px;
+    color: white;
+    font-weight: normal;
+    font-size: 1.4em;
+    text-align: left;
+}
+
+#new h2 {
+    background-color: fuchsia;
+ 
+}
+
+#new img {
+    width: 100%;
+    height: auto;
+
+}
+
+#best h2 {
+    background-color: #8fca30;
+    
+}
+
+#best img {
+    width: 100%;
+    height: auto;
+}
+
+#crush h2 {
+    background-color: rgb(47, 125, 161);
+    
+}
+
+#crush img {
+    width: 100%;
+    height: 100%;
+}
+
+#news h3 {
+    font-family: "Courgette";
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+#news small {
+    display: block;
+    font-family: "Courgette";
+
+    text-align: center;
+    font-size: 1.2rem;
+}
+footer #info {
+    background-color: #f090c8;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer #info article:hover {
+    color: white;
+}
+
+
+footer #bottombar {
+    background-color: var(--prim);
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#bottombar section {
+    display: flex;
+
+}
+
+footer #bottombar h2 {
+    text-align: center;
+}
+
+#bottombar article ul {
+    list-style-type: none;
+}
+
+footer #bottombar li {
+    text-align: center;
+}
+
+footer #bottombar li:hover {
+    color: white;
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        display: block;
+
+    }
+
+    .container {
+        margin: auto;
+    }
+    .container img{
+        width: 100%;
+    }
+
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        display: none;
+    }
+
+    #slider h2 {
+        position: relative;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    #select article {
+        display: block;
+        margin: auto;
+    }
+    #select article h3{
+        font-size: small;
+    }
+
+    #news {
+        display: block;
+    }
+
+    footer {
+        display: block;
+    }
+
+    footer #info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer #info article {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+    footer #bottombar{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer #bottombar article{
+        padding: 10px;
+    }
+    footer #bottombar li{
+        padding: 5px;
+    }
+}
